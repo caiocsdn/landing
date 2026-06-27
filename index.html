@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caio Cesar — Desenvolvedor Web</title>
+<meta name="description" content="Caio Cesar, desenvolvedor web em Recife. Sites e landing pages em HTML, CSS e JavaScript para restaurantes, bares, cafés e negócios locais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#home">Pular para o conteúdo</a>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__brand">CC<span class="nav__brand-dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Navegação principal">
+      <a href="#stack" data-nav>Stack</a>
+      <a href="#servicos" data-nav>Serviços</a>
+      <a href="#sobre" data-nav>Sobre</a>
+      <a href="#contato" data-nav>Contato</a>
+    </nav>
+
+    <a class="nav__cta" href="https://wa.me/5581992969779?text=Ol%C3%A1%20Caio%2C%20vim%20pelo%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20de%20desenvolvimento%20web!" target="_blank" rel="noopener">Vamos conversar</a>
+
+    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+
+      <div class="hero__copy">
+        <p class="eyebrow">Recife, PE — Desenvolvedor Web</p>
+        <h1 class="hero__title">
+          <span class="line"><span class="reveal-text">Eu transformo</span></span>
+          <span class="line"><span class="reveal-text">código em <em>sites</em></span></span>
+          <span class="line"><span class="reveal-text">que vendem.</span></span>
+        </h1>
+        <p class="hero__sub reveal-up" data-reveal>HTML, CSS e JavaScript no controle: sites rápidos, responsivos e pensados pra transformar visita em cliente.</p>
+        <div class="hero__actions reveal-up" data-reveal>
+          <a class="btn btn--solid" href="#contato">Iniciar um projeto</a>
+          <a class="btn btn--line" href="#servicos">Ver serviços</a>
+        </div>
+      </div>
+
+      <div class="hero__demo reveal-up" data-reveal aria-hidden="true">
+        <div class="demo" id="demo">
+          <div class="demo__bar">
+            <span class="demo__dots"><i></i><i></i><i></i></span>
+            <div class="demo__tabs">
+              <button class="demo__tab is-active" id="tabCode" type="button">código</button>
+              <button class="demo__tab" id="tabPreview" type="button">preview</button>
+            </div>
+          </div>
+
+          <div class="demo__stage">
+            <div class="demo__panel demo__panel--code is-active" id="panelCode">
+              <pre class="demo__code"><code id="typedCode"></code><span class="demo__cursor" id="cursor">▍</span></pre>
+            </div>
+
+            <div class="demo__panel demo__panel--preview" id="panelPreview">
+              <div class="mock">
+                <div class="mock__nav">
+                  <span class="mock__dot"></span>
+                  <span class="mock__brand">Sabor&nbsp;da&nbsp;Esquina</span>
+                </div>
+                <div class="mock__hero">
+                  <p class="mock__eyebrow">Aberto até 23h</p>
+                  <h3 class="mock__title">Sabor que<br><span>conquista.</span></h3>
+                  <span class="mock__btn">Ver cardápio</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="hero__demo-caption">um trecho real do tipo de site que eu construo</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== STACK ===== -->
+  <section class="stack" id="stack">
+    <div class="stack__inner">
+      <p class="eyebrow" data-reveal>Specs</p>
+      <h2 class="section-title" data-reveal>Por dentro do que eu&nbsp;construo</h2>
+
+      <dl class="spec-list">
+        <div class="spec-row" data-reveal>
+          <dt>Estrutura</dt>
+          <dd>HTML5 semântico — organizado, acessível e fácil de manter</dd>
+        </div>
+        <div class="spec-row" data-reveal>
+          <dt>Estilo</dt>
+          <dd>CSS3 — grid, flexbox, animações e responsividade real, não só "encolher a tela"</dd>
+        </div>
+        <div class="spec-row" data-reveal>
+          <dt>Interação</dt>
+          <dd>JavaScript — formulários, micro-interações e comportamento sob medida</dd>
+        </div>
+        <div class="spec-row" data-reveal>
+          <dt>Performance</dt>
+          <dd>Mobile-first, carregamento leve, sem peso desnecessário</dd>
+        </div>
+        <div class="spec-row" data-reveal>
+          <dt>Fluxo</dt>
+          <dd>Git e VS Code — versionamento e organização de cada etapa</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="services" id="servicos">
+    <div class="services__inner">
+      <p class="eyebrow" data-reveal>Serviços</p>
+      <h2 class="section-title" data-reveal>Sites feitos pra quem vive do<br>movimento na rua</h2>
+      <p class="section-lead" data-reveal>Negócio local vive de gente que decide rápido. O site precisa decidir por você antes que a pessoa feche a aba.</p>
+
+      <div class="cards">
+        <article class="card" data-reveal>
+          <p class="card__tag">Restaurantes</p>
+          <p class="card__text">Cardápio digital sempre atualizado, fotos que dão fome e caminho curto até o pedido.</p>
+          <p class="card__includes">Cardápio interativo · Pedido via WhatsApp</p>
+        </article>
+
+        <article class="card" data-reveal>
+          <p class="card__tag">Bares &amp; Cafés</p>
+          <p class="card__text">Ambiente, horário de funcionamento e localização em destaque — pra quem decide em segundos.</p>
+          <p class="card__includes">Mapa e horários · Galeria de fotos</p>
+        </article>
+
+        <article class="card" data-reveal>
+          <p class="card__tag">Negócios locais</p>
+          <p class="card__text">Presença profissional pra quem hoje depende só do Google Maps e do boca a boca.</p>
+          <p class="card__includes">Formulário de contato · Otimizado pra busca local</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="about" id="sobre">
+    <div class="about__inner">
+      <p class="eyebrow" data-reveal>Sobre</p>
+      <p class="about__quote" data-reveal>Aprendo rápido. Construo rápido. Entrego rápido.</p>
+      <p class="about__text" data-reveal>
+        Tenho 18 anos, moro no Recife e curso Sistemas de Informação na Cesar School.
+        Antes de qualquer framework, aprendi a gostar de entender como as coisas funcionam por
+        dentro — e isso virou o jeito como eu trabalho: pouca enrolação, código limpo e o site
+        no ar o quanto antes.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contact" id="contato">
+    <div class="contact__inner">
+      <p class="eyebrow" data-reveal>Contato</p>
+      <h2 class="section-title" data-reveal>Pronto pra ter<br>um site assim?</h2>
+      <p class="section-lead" data-reveal>Me chama e a gente conversa sobre o seu negócio.</p>
+
+      <div class="contact__actions" data-reveal>
+        <a class="btn btn--solid btn--big" href="https://wa.me/5581992969779?text=Ol%C3%A1%20Caio%2C%20vim%20pelo%20seu%20site%20e%20quero%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20de%20desenvolvimento%20web!" target="_blank" rel="noopener">Falar no WhatsApp</a>
+        <a class="btn btn--line btn--big" href="mailto:caiocesar.contato01@gmail.com">Enviar e-mail</a>
+      </div>
+
+      <div class="contact__meta" data-reveal>
+        <button class="contact__email" id="copyEmailBtn" type="button">
+          <span id="copyEmailLabel">caiocesar.contato01@gmail.com</span>
+        </button>
+        <span class="contact__sep">·</span>
+        <span class="contact__location">Recife, PE</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Caio Cesar — Desenvolvedor Web · Recife, PE · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
