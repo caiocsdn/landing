@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ===================== SCROLLSPY ===================== */
-  const spySections = ['stack', 'servicos', 'sobre', 'contato']
+  const spySections = ['stack', 'servicos', 'diferenciais', 'faq', 'sobre', 'contato']
     .map((id) => document.getElementById(id))
     .filter(Boolean);
   const navItems = document.querySelectorAll('[data-nav]');
@@ -182,5 +182,4 @@ window.addEventListener('load', function() {
   window.scrollTo(0, 0);
 });
 
-  
 });
